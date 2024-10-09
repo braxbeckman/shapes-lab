@@ -1,20 +1,19 @@
+#include "rectangle.hpp"
 #include <iostream>
 #include <string>
-#include "rectangle.hpp"
 
 using namespace std;
 
 rectangle::rectangle(string area)
 {
-    this->area = area;
-
+  this->area = area;
 }
-string rectangle::get_area()
+string rectangle::get_Area()
 {
-    return Area;
+  return area;
 };
 
 void rectangle::shape()
 {
-cout << area << "area of rectangle" << endl;
+  cout << area << "area of rectangle" << endl;
 }

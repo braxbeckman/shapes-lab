@@ -1,13 +1,11 @@
-#include <iostream>
-#include "rectangle.hpp"
 #include "circle.hpp"
+#include "rectangle.hpp"
 #include "right_triangle.hpp"
+#include <iostream>
 using namespace std;
 
-int main(){
-    
-
-    Circle shape = circle("shape");
-    angle *shape = &shape;
-    
+int main()
+{
+  circle shape = circle("shape");
+  angle *angle = &shape;
 }

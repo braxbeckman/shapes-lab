@@ -1,14 +1,17 @@
+#include "circle.hpp"
+#include <cmath>
 #include <iostream>
 #include <string>
-#include "circle.hpp"
 
 using namespace std;
 
-circle::circle(string area)
+circle::circle(int radius)
 {
-
+  this->radius = radius;
 }
 
-void circle::shape()
+string circle::get_Area()
 {
-};
+  double total{};
+  total = pow((radius *), double y)
+}
