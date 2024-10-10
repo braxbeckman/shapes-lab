@@ -6,6 +6,4 @@ using namespace std;
 
 int main()
 {
-  circle shape = circle("shape");
-  angle *angle = &shape;
 }

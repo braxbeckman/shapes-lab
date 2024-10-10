@@ -10,8 +10,14 @@ circle::circle(int radius)
   this->radius = radius;
 }
 
-string circle::get_Area()
+double circle::get_Area()
 {
   double total{};
-  total = pow((radius *), double y)
+  total = pow((radius * 3.14), 2);
+  return total;
+}
+
+double circle::get_Perimeter()
+{
+  return 0;
 }

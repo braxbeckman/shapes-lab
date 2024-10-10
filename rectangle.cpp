@@ -8,12 +8,12 @@ rectangle::rectangle(string area)
 {
   this->area = area;
 }
-string rectangle::get_Area()
+double rectangle::get_Area()
 {
-  return area;
-};
+  return 0;
+}
 
-void rectangle::shape()
+double rectangle::get_Perimeter()
 {
-  cout << area << "area of rectangle" << endl;
+  return 0;
 }

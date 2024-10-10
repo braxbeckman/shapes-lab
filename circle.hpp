@@ -1,10 +1,10 @@
 #pragma once
-#include "angle.hpp"
+#include "shape.hpp"
 #include <string>
 
 using namespace std;
 
-class circle : public angle
+class circle : public shape
 {
 private:
   string name{};
@@ -12,6 +12,6 @@ private:
 
 public:
   explicit circle(int);
-  string get_Area() override;
-  string get_Perimeter() override;
+  double get_Area() override;
+  double get_Perimeter() override;
 };
