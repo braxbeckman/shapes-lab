@@ -1,16 +1,17 @@
+#pragma once
+#include "shape.hpp"
 #include <string>
-#include "angle.hpp"
 
 using namespace std;
 
-class circle : public angle
+class Circle : public Shape
 {
-    private:
-    string name{};
+private:
+  string name{};
+  int radius{};
 
-    public:
-    explicit circle(string name);
-    string get_Area() override;
-    string get_Permeter() override;
-    void shape() override;
+public:
+  explicit Circle(int);
+  double get_Area() override;
+  double get_Perimeter() override;
 };

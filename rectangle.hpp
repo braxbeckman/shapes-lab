@@ -1,19 +1,17 @@
+#pragma once
+#include "shape.hpp"
 #include <string>
-#include "angle.hpp"
 
 using namespace std;
 
-class rectangle : public angle
+class Rectangle : public Shape
 {
- private 
-    string area{};
+private:
+  int length{};
+  int width{};
 
- public: 
-    explicit rectangle(string area);
-    string get_Area() override;
-    //string get_Perimeter() override;
-    void shape() override;
-
+public:
+  explicit Rectangle(int length, int width);
+  double get_Area() override;
+  double get_Perimeter() override;
 };
-
-

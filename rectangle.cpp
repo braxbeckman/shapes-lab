@@ -1,20 +1,24 @@
+#include "rectangle.hpp"
 #include <iostream>
 #include <string>
-#include "rectangle.hpp"
 
 using namespace std;
 
-rectangle::rectangle(string area)
+Rectangle::Rectangle(int length, int width)
 {
-    this->area = area;
-
+  this->length = length;
+  this->width = width;
 }
-string rectangle::get_area()
+double Rectangle::get_Area()
 {
-    return Area;
-};
+  int total{};
+  total = length * width;
+  return total;
+}
 
-void rectangle::shape()
+double Rectangle::get_Perimeter()
 {
-cout << area << "area of rectangle" << endl;
+  int total{};
+  total = (2 * length) + (2 * width);
+  return total;
 }
