@@ -1,9 +1,9 @@
 #include "Rectangle.h"
 
 double Rectangle::getArea() const {
-    return width * height; // Use height instead of length
+    return width * height; 
 }
 
 double Rectangle::getPerimeter() const {
-    return 2 * (width + height); // Use height instead of length
+    return 2 * (width + height); 
 }
