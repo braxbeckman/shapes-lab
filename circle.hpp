@@ -4,14 +4,14 @@
 
 using namespace std;
 
-class circle : public shape
+class Circle : public Shape
 {
 private:
   string name{};
   int radius{};
 
 public:
-  explicit circle(int);
+  explicit Circle(int);
   double get_Area() override;
   double get_Perimeter() override;
 };

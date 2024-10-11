@@ -4,15 +4,14 @@
 
 using namespace std;
 
-class rectangle : public shape
+class Rectangle : public Shape
 {
 private:
   int length{};
   int width{};
-  string area{};
 
 public:
-  explicit rectangle(string area);
+  explicit Rectangle(int length, int width);
   double get_Area() override;
   double get_Perimeter() override;
 };

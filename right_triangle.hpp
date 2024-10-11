@@ -2,14 +2,15 @@
 #include "shape.hpp"
 #include <string>
 
-class right_triangle : public shape
+class Right_triangle : public Shape
 {
 private:
-  double base{};
-  double height{};
+  int base{};
+  int height{};
+  int hypotenuse{};
 
 public:
-  right_triangle(int length, int width);
+  Right_triangle(int base, int height, int hypotenuse);
   double get_Area() override;
   double get_Perimeter() override;
 };

@@ -4,16 +4,21 @@
 
 using namespace std;
 
-rectangle::rectangle(string area)
+Rectangle::Rectangle(int length, int width)
 {
-  this->area = area;
+  this->length = length;
+  this->width = width;
 }
-double rectangle::get_Area()
+double Rectangle::get_Area()
 {
-  return 0;
+  int total{};
+  total = length * width;
+  return total;
 }
 
-double rectangle::get_Perimeter()
+double Rectangle::get_Perimeter()
 {
-  return 0;
+  int total{};
+  total = (2 * length) + (2 * width);
+  return total;
 }
