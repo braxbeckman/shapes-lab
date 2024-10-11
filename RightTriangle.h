@@ -4,7 +4,7 @@
 #include "Shape.h"
 
 class RightTriangle : public Shape {
-protected: // Change private to protected
+protected: 
     double base;
     double height;
 public:
