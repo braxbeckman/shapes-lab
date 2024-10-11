@@ -1,20 +1,9 @@
-#include <iostream>
-#include <string>
-#include "rectangle.hpp"
+#include "Rectangle.h"
 
-using namespace std;
-
-rectangle::rectangle(string area)
-{
-    this->area = area;
-
+double Rectangle::getArea() const {
+    return width * height; // Use height instead of length
 }
-string rectangle::get_area()
-{
-    return Area;
-};
 
-void rectangle::shape()
-{
-cout << area << "area of rectangle" << endl;
+double Rectangle::getPerimeter() const {
+    return 2 * (width + height); // Use height instead of length
 }
