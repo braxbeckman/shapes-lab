@@ -1,24 +1,11 @@
-#include "rectangle.hpp"
-#include <iostream>
-#include <string>
+#include "Rectangle.h"
 
-using namespace std;
-
-Rectangle::Rectangle(int length, int width)
+double Rectangle::getArea() const
 {
-  this->length = length;
-  this->width = width;
-}
-double Rectangle::get_Area()
-{
-  int total{};
-  total = length * width;
-  return total;
+  return width * height; // Use height instead of length
 }
 
-double Rectangle::get_Perimeter()
+double Rectangle::getPerimeter() const
 {
-  int total{};
-  total = (2 * length) + (2 * width);
-  return total;
+  return 2 * (width + height); // Use height instead of length
 }

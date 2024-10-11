@@ -1,27 +1,12 @@
-#include "circle.hpp"
+#include "Circle.h"
 #include <cmath>
-#include <iostream>
-#include <string>
 
-using namespace std;
-
-Circle::Circle(int radius)
+double Circle::getArea() const
 {
-  this->radius = radius;
+  return M_PI * radius * radius;
 }
 
-double Circle::get_Area()
+double Circle::getPerimeter() const
 {
-  double pi = 2 * acos(0.0);
-  double total{};
-  total = pow((radius * pi), 2);
-  return total;
-}
-
-double Circle::get_Perimeter()
-{
-  double pi = 2 * acos(0.0);
-  double total{};
-  total = (2 * pi * radius);
-  return total;
+  return 2 * M_PI * radius;
 }
