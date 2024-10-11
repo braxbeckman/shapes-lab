@@ -6,8 +6,8 @@
 class Square : public Rectangle {
 public:
     Square(double side) : Rectangle(side, side) {}
-    double getArea() const override;     // Optional override
-    double getPerimeter() const override; // Optional override
+    double getArea() const override;     
+    double getPerimeter() const override; 
 };
 
 #endif // SQUARE_H
