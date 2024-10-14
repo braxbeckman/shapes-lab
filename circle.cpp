@@ -1,12 +1,14 @@
+#include <iostream>
+#include <string>
+#include "circle.hpp"
 
+using namespace std;
 
-#include "Circle.h"
-#include <cmath>
+circle::circle(string area)
+{
 
-double Circle::getArea() const {
-    return M_PI * radius * radius;
 }
 
-double Circle::getPerimeter() const {
-    return 2 * M_PI * radius;
-}
+void circle::shape()
+{
+};
