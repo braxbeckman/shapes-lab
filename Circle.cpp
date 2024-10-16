@@ -10,3 +10,8 @@ double Circle::getPerimeter() const
 {
   return 2 * M_PI * radius;
 }
+
+std::string Circle::getShape() const
+{
+  return shape;
+}
